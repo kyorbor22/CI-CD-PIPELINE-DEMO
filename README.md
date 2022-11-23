@@ -8,6 +8,14 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/
 
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
+*****adding yum install & start commands ******
+
+sudo yum install jenkins
+
+service jenkins status
+
+service jenkins start
+
 #Maven download command:
 
 wget https://mirrors.gigenet.com/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
