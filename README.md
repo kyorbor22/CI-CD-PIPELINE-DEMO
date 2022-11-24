@@ -1,6 +1,46 @@
 # CI-CD-PIPELINE-DEMO
 
 This is an example ready-to-deploy java web application built for Tomcat using Maven and webapp-runner.
+1. download java11
+#yum install java11
+
+#cd /usr/lib/jvm
+
+#ls -ltr
+ 
+select this java path
+
+******/usr/lib/jvm/jre-17-openjdk ****
+
+#cd ~
+
+# vim .bash_profile
+copy and paste the script below!!
+
+==================================================
+
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+JAVA_HOME=/usr/lib/jvm/jre-17-openjdk
+PATH=$PATH:$HOME/bin:$JAVA_HOME
+
+export PATH
+===================================================
+
+#echo $JAVA_HOME
+
+#source .bash_profile
+
+#echo $JAVA_HOME
+
+********************Now download and configure jenkins***************************
+Before installing jenkis do the following:
 
 #Jenkins Repo and key download command:
 
