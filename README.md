@@ -1,8 +1,8 @@
 # CI-CD-PIPELINE-DEMO
 
 This is an example ready-to-deploy java web application built for Tomcat using Maven and webapp-runner.
-1. download java11
-#yum install java11
+1. download java-11
+#yum install java-11*
 
 #cd /usr/lib/jvm
 
@@ -10,7 +10,7 @@ This is an example ready-to-deploy java web application built for Tomcat using M
  
 select this java path
 
-******/usr/lib/jvm/jre-17-openjdk ****
+******/usr/lib/jvm/java-11-openjdk****
 
 #cd ~
 
@@ -27,7 +27,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-JAVA_HOME=/usr/lib/jvm/jre-17-openjdk
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 PATH=$PATH:$HOME/bin:$JAVA_HOME
 
 export PATH
@@ -216,3 +216,4 @@ rpm -Uvh https://assets.nagios.com/downloads/ncpa/ncpa-latest.el6.x86_64.rpm
 
 wget http://54.209.36.115/nagiosxi/includes/configwizards/docker/plugins/check_docker.py
 
+updating java-11 installation
