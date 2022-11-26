@@ -70,7 +70,9 @@ wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scann
 
 # TOMCAT download command:
 
-wget https://mirrors.ocf.berkeley.edu/apache/tomcat/tomcat-8/v8.5.69/bin/apache-tomcat-8.5.69.tar.gz
+wget https://mirrors.ocf.berkeley.edu/apache/tomcat/tomcat-8/v8.5.84/src/apache-tomcat-8.5.84-src.tar.gz
+
+https://mirrors.ocf.berkeley.edu/apache/tomcat/tomcat-8/v8.5.69/bin/apache-tomcat-8.5.69.tar.gz
 
 # TOMCAT user details:
   <role rolename="manager-script"/>
