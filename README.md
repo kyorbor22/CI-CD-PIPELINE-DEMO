@@ -159,7 +159,7 @@ install Calico network connector using command as kubeuser:
 su - kubeuser
 kubectl create -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
   
-# application-deployment.yml
+# vim application-deployment.yml
  
 apiVersion: apps/v1
 kind: Deployment
