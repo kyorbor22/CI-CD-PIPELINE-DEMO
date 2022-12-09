@@ -7,6 +7,7 @@
 <h3>Hope you have enjoyed the learning!!.</h3>  
   
 <h4> Because DevOPs learning is fun!</h4>
-
+  
+<h5> Ensure that you practice!</h5>
 </body>
 </html>
