@@ -208,7 +208,7 @@ spec:
   
 # NAGIOS XI DOWNLOAD URL: on ubuntu-1 and two extra machines: ubuntu and centos
 
-setup your ec2-instance
+setup your ec2-instance [ec2 t2medium 2 and 4]
 
 yum -y update
 
@@ -229,10 +229,27 @@ next, add the other two machines to be monitored.
 
 
 
-# Download NCPA package command:
+# Download NCPA package command:To be installed to the servers that are to be monitored.
 
 rpm -Uvh https://assets.nagios.com/downloads/ncpa/ncpa-latest.el6.x86_64.rpm
-  
+After installation, navigate to the ncpa file
+ 
+ cd /usr/local/ncpa/etc
+ 
+ ls -ltr
+ 
+ vim ncpa.cfg
+ 
+ community_string = welcome
+ 
+ :wq!
+ 
+ systemctl restart ncpa
+ 
+ netstat -plant |grep ncpa
+ 
+ 
+ 
 # Download check_docker plugin command:
 
 wget http://54.209.36.115/nagiosxi/includes/configwizards/docker/plugins/check_docker.py
