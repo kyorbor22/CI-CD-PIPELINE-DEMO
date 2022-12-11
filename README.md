@@ -206,10 +206,29 @@ spec:
       nodePort: 30000
   
   
-# NAGIOS XI DOWNLOAD URL:
+# NAGIOS XI DOWNLOAD URL: on ubuntu-1 and two extra machines: ubuntu and centos
+
+setup your ec2-instance
+
+yum -y update
+
+apt-get update -y [ubuntu]
 
 curl https://assets.nagios.com/downloads/nagiosxi/install.sh | sh
-  
+
+after Nagio's installation a login URL will appear: copy and paste that to a browser:
+
+copy ec2 nagio's public IP + the url [nagioxi] 
+
+change time zone; enter first name and last name + emailaddress + start trial
+copy trial-key to nagio web page
+enter username and password; finish installation.
+login and accept trial aggrement for 30days.
+next, add the other two machines to be monitored.
+
+
+
+
 # Download NCPA package command:
 
 rpm -Uvh https://assets.nagios.com/downloads/ncpa/ncpa-latest.el6.x86_64.rpm
