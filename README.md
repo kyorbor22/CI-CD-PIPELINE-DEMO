@@ -257,3 +257,5 @@ wget http://54.209.36.115/nagiosxi/includes/configwizards/docker/plugins/check_d
 validating ci/cd settup
 This is a test to integrate Jenkins-docker-ansible and automation!!
 
+enjoy!!
+
