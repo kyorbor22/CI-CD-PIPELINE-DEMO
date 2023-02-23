@@ -18,11 +18,10 @@ pipeline {
                     echo "Strating the archive process"
 					archiveArtifacts artifacts: '**/*.war'
 					
-			       }
+		}
+	    }
 				   
-				}
-    		}
-
-                        
+	}
+    		                        
       }
 }
