@@ -2,14 +2,14 @@ pipeline {
       agent any
 	  
 	  tools{
-	      maven "M2_HOME"
+	      maven "Maven 3.9.0"
 		  
 		}
 		
       stages {
             stage('Build Application') {
                   steps {
-                        sh 'mvn clean package'
+                        sh 'clean install'
                     
                   }
             
@@ -23,13 +23,6 @@ pipeline {
 				}
     		}
 
-               stage('Deploy application') {
-                  steps {
-                        build job: 'APPLICATION-DEPLOYMENT-JOB'
-                    
-                  }
-
-		  }		  
-          
+                        
       }
 }
